@@ -1,0 +1,384 @@
+/* ===== 1. Variabelen: kleuren op één plek ===== */
+:root {
+  --red: #C8102E;
+  --red-dark: #A50E25;
+  --white: #FFFFFF;
+  --light: #FBF6F6;
+  --pink: #FBEFF1;
+  --text: #1F1A1A;
+  --text-light: #5E5454;
+  --border: #EDE6E6;
+}
+
+/* ===== 2. Basis ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+a {
+  color: var(--red-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.small {
+  font-size: 15px;
+  color: var(--text-light);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ===== 3. Header en menu ===== */
+.header {
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 14px;
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.menu a:hover {
+  background-color: var(--pink);
+  color: var(--red-dark);
+}
+
+/* ===== 4. Hero (welkomstblok) ===== */
+.hero {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 80px 0;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-text {
+  flex: 2 1 480px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero-label {
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button-white {
+  background-color: var(--white);
+  color: var(--red-dark);
+}
+
+.button-outline {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.card {
+  background-color: var(--white);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.opening-hours {
+  flex: 1 1 300px;
+}
+
+.opening-hours h2 {
+  font-size: 24px;
+}
+
+.opening-hours table {
+  width: 100%;
+}
+
+.opening-hours td {
+  padding: 6px 0;
+}
+
+.opening-hours td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* ===== 5. Secties ===== */
+.section {
+  padding: 72px 0;
+}
+
+.section-light {
+  background-color: var(--light);
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+
+.two-columns > * {
+  flex: 1 1 360px;
+}
+
+.photo-placeholder {
+  height: 300px;
+  border-radius: 16px;
+  background-color: var(--pink);
+  color: var(--red-dark);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== 6. Producten ===== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.product {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  padding-bottom: 16px;
+}
+
+.product-photo {
+  height: 160px;
+  background-color: var(--pink);
+  color: var(--red-dark);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.product p,
+.product h3 {
+  margin: 0 20px;
+}
+
+.product-category {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.product-price {
+  margin-top: 8px;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--red);
+}
+
+/* ===== 7. Chatbot (ontwerp) ===== */
+.chat {
+  max-width: 380px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: bold;
+  padding: 14px 16px;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background-color: var(--light);
+  font-size: 16px;
+}
+
+.message {
+  margin: 0;
+  max-width: 80%;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.message-bot {
+  align-self: flex-start;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+}
+
+.message-user {
+  align-self: flex-end;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.chat-form {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.chat-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.chat-form button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background-color: var(--red-dark);
+}
+
+/* ===== 8. Footer ===== */
+.footer {
+  background-color: var(--text);
+  color: var(--white);
+  padding: 24px 0;
+  font-size: 16px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* ===== 9. Telefoon (kleine schermen) ===== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .hero,
+  .section {
+    padding: 48px 0;
+  }
+}
+.map {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 16px;
+   }
