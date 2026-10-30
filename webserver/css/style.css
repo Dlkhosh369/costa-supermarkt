@@ -253,36 +253,40 @@ a {
 }
 
 /* ===== 6. Productgroepen ===== */
+/* ===== 6. Productgroepen ===== */
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  margin-top: 24px;
 }
 
 .category {
   display: block;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--border);
   text-decoration: none;
   color: var(--text);
+  transition: transform 0.2s, border-color 0.2s;
 }
 
 .category:hover {
   border-color: var(--red);
+  transform: translateY(-4px);
 }
 
 .category-img {
   width: 100%;
-  height: 110px;
+  height: 200px;
   object-fit: cover;
 }
 
 .category-name {
   display: block;
-  padding: 10px 12px;
+  padding: 16px 18px;
   font-weight: bold;
+  font-size: 19px;
 }
 
 /* ===== 7. Aanbiedingen ===== */
@@ -481,8 +485,17 @@ a {
     padding: 32px 0;
   }
 
-  .categories,
-  .offers {
+    .categories {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .category-img {
+    height: 130px;
+  }
+
+  .category-name {
+    font-size: 16px;
+    padding: 12px;
   }
 }
