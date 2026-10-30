@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COSTA Supermarket | Poolse supermarkt in Amsterdam-Noord</title>
-  <link rel="stylesheet" href="/webserver/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -18,6 +18,7 @@
       <nav>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
+          <li><a href="#producten">Producten</a></li>
           <li><a href="#aanbiedingen">Aanbiedingen</a></li>
           <li><a href="#over-ons">Over ons</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -36,14 +37,14 @@
           <h1>Smaken van Polen, om de hoek</h1>
           <p>Vers brood, vleeswaren en Poolse en Oost-Europese producten. Heb je een vraag? Stel hem aan onze chatbot.</p>
           <div class="buttons">
-            <a href="#aanbiedingen" class="button button-white">Bekijk aanbiedingen</a>
+            <a href="#producten" class="button button-white">Bekijk producten</a>
             <a href="#contact" class="button button-outline">Route en contact</a>
           </div>
         </div>
 
         <div class="card opening-hours">
           <h2>Openingstijden</h2>
-                    <table>
+          <table>
             <tr>
               <td>Maandag – zaterdag</td>
               <td>09:00 – 21:00</td>
@@ -58,48 +59,117 @@
       </div>
     </section>
 
-    <!-- AANBIEDINGEN: producten van deze week -->
-    <section id="aanbiedingen" class="section">
+    <!-- PRODUCTEN: productgroepen, klik om de producten te zien -->
+    <section id="producten" class="section">
       <div class="container">
-        <h2>Aanbiedingen deze week</h2>
-        <p class="small">Prijzen onder voorbehoud</p>
+        <h2>Onze producten</h2>
 
-        <div class="products">
-          <article class="product">
-            <div class="product-photo">[FOTO]</div>
-            <p class="product-category">Brood</p>
-            <h3>[PRODUCTNAAM]</h3>
-            <p class="product-price">€ [PRIJS]</p>
-          </article>
+        <div class="categories">
+          <a href="categorie.html?groep=brood" class="category">
+            <img src="../img/brood.jpeg" alt="Pools brood" class="category-img">
+            <span class="category-name">Brood</span>
+          </a>
 
-          <article class="product">
-            <div class="product-photo">[FOTO]</div>
-            <p class="product-category">Vleeswaren</p>
-            <h3>[PRODUCTNAAM]</h3>
-            <p class="product-price">€ [PRIJS]</p>
-          </article>
+          <a href="categorie.html?groep=vlees" class="category">
+            <img src="../img/vlees.jpeg" alt="Poolse vleeswaren" class="category-img">
+            <span class="category-name">Vlees</span>
+          </a>
 
-          <article class="product">
-            <div class="product-photo">[FOTO]</div>
-            <p class="product-category">Zuivel</p>
-            <h3>[PRODUCTNAAM]</h3>
-            <p class="product-price">€ [PRIJS]</p>
-          </article>
+          <a href="categorie.html?groep=groente" class="category">
+            <img src="../img/groente.jpeg" alt="Groente en fruit" class="category-img">
+            <span class="category-name">Groente en fruit</span>
+          </a>
 
-          <article class="product">
-            <div class="product-photo">[FOTO]</div>
-            <p class="product-category">Snoep</p>
-            <h3>[PRODUCTNAAM]</h3>
-            <p class="product-price">€ [PRIJS]</p>
-          </article>
+          <a href="categorie.html?groep=snoep" class="category">
+            <img src="../img/snoep.jpeg" alt="Pools snoep" class="category-img">
+            <span class="category-name">Snoep</span>
+          </a>
         </div>
       </div>
     </section>
 
+           <div class="offers">
+          <div class="offers-track">
+            <article class="offer">
+              <img src="../img/brood.jpeg" alt="Vers Pools brood" class="offer-img">
+              <div class="offer-info">
+                <span class="offer-badge">Aanbieding</span>
+                <p class="offer-category">Brood</p>
+                <h3>[PRODUCTNAAM]</h3>
+                <p class="offer-price">€ [PRIJS]</p>
+              </div>
+            </article>
+            <article class="offer">
+              <img src="../img/vlees.jpeg" alt="Poolse vleeswaren" class="offer-img">
+              <div class="offer-info">
+                <span class="offer-badge">Aanbieding</span>
+                <p class="offer-category">Vlees</p>
+                <h3>[PRODUCTNAAM]</h3>
+                <p class="offer-price">€ [PRIJS]</p>
+              </div>
+            </article>
+            <article class="offer">
+              <img src="../img/groente.jpeg" alt="Verse groente" class="offer-img">
+              <div class="offer-info">
+                <span class="offer-badge">Aanbieding</span>
+                <p class="offer-category">Groente en fruit</p>
+                <h3>[PRODUCTNAAM]</h3>
+                <p class="offer-price">€ [PRIJS]</p>
+              </div>
+            </article>
+            <article class="offer">
+              <img src="../img/snoep.jpeg" alt="Pools snoep" class="offer-img">
+              <div class="offer-info">
+                <span class="offer-badge">Aanbieding</span>
+                <p class="offer-category">Snoep</p>
+                <h3>[PRODUCTNAAM]</h3>
+                <p class="offer-price">€ [PRIJS]</p>
+              </div>
+            </article>
+            <!-- Dezelfde kaarten nog een keer, zodat de animatie zonder gat doorloopt -->
+            <article class="offer" aria-hidden="true">
+              <img src="../img/brood.jpeg" alt="" class="offer-img">
+              <div class="offer-info">
+                <span class="offer-badge">Aanbieding</span>
+                <p class="offer-category">Brood</p>
+                <h3>[PRODUCTNAAM]</h3>
+                <p class="offer-price">€ [PRIJS]</p>
+              </div>
+            </article>
+            <article class="offer" aria-hidden="true">
+              <img src="../img/vlees.jpeg" alt="" class="offer-img">
+              <div class="offer-info">
+                <span class="offer-badge">Aanbieding</span>
+                <p class="offer-category">Vlees</p>
+                <h3>[PRODUCTNAAM]</h3>
+                <p class="offer-price">€ [PRIJS]</p>
+              </div>
+            </article>
+            <article class="offer" aria-hidden="true">
+              <img src="../img/groente.jpeg" alt="" class="offer-img">
+              <div class="offer-info">
+                <span class="offer-badge">Aanbieding</span>
+                <p class="offer-category">Groente en fruit</p>
+                <h3>[PRODUCTNAAM]</h3>
+                <p class="offer-price">€ [PRIJS]</p>
+              </div>
+            </article>
+            <article class="offer" aria-hidden="true">
+              <img src="../img/snoep.jpeg" alt="" class="offer-img">
+              <div class="offer-info">
+                <span class="offer-badge">Aanbieding</span>
+                <p class="offer-category">Snoep</p>
+                <h3>[PRODUCTNAAM]</h3>
+                <p class="offer-price">€ [PRIJS]</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
     <!-- OVER ONS: het verhaal van de winkel -->
-    <section id="over-ons" class="section section-light">
+    <section id="over-ons" class="section">
       <div class="container two-columns">
-        <img src="/img/image.png" alt="Voorkant van COSTA Supermarket aan de Meeuwenlaan" class="store-photo">
+        <img src="../img/winkel.png" alt="Voorkant van COSTA Supermarket aan de Meeuwenlaan" class="store-photo">
         <div>
           <h2>Over ons</h2>
           <p>[Het verhaal van COSTA Supermarket: sinds wanneer bestaat de winkel en wat maakt de winkel bijzonder?]</p>
@@ -108,21 +178,22 @@
       </div>
     </section>
 
-    <!-- CONTACT: adres, telefoon en Facebook -->
-    <section id="contact" class="section">
+    <!-- CONTACT: adres, telefoon, Facebook en kaart -->
+    <section id="contact" class="section section-light">
       <div class="container two-columns">
         <div>
           <h2>Contact</h2>
           <p><strong>Adres:</strong> Meeuwenlaan 102, 1021 JL Amsterdam</p>
           <p><strong>Telefoon:</strong> <a href="tel:+31208469688">020 846 9688</a></p>
           <p><strong>Facebook:</strong> <a href="https://www.facebook.com/p/COSTA-Supermarket-100054594422867/" target="_blank" rel="noopener noreferrer">COSTA Supermarket | Amsterdam</a></p>
+          <p><a href="https://share.google/RZNBIEMRVBd6GxDip" target="_blank" rel="noopener noreferrer" class="button button-red">Route plannen</a></p>
         </div>
         <iframe class="map" title="Kaart: COSTA Supermarket, Meeuwenlaan 102" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.1538090593335!2d4.922149000000001!3d52.385762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609aac30f166b%3A0xebf649bab7775d86!2sCosta%20Supermarket%20Polski%20sklep!5e0!3m2!1snl!2snl!4v1793296317606!5m2!1snl!2snl" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
     </section>
 
     <!-- CHATBOT: alleen het ontwerp, de code komt later in TypeScript -->
-    <section id="chatbot" class="section section-light">
+    <section id="chatbot" class="section">
       <div class="container two-columns">
         <div>
           <h2>Vraag het onze chatbot</h2>
