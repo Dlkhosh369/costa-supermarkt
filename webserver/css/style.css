@@ -253,7 +253,6 @@ a {
 }
 
 /* ===== 6. Productgroepen ===== */
-/* ===== 6. Productgroepen ===== */
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -289,7 +288,34 @@ a {
   font-size: 19px;
 }
 
-/* ===== 7. Aanbiedingen ===== */
+/* ===== 6b. Banner tussen producten en aanbiedingen ===== */
+.banner {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 32px 0;
+}
+
+.banner-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.banner h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.banner-label {
+  margin: 0 0 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+
 /* ===== 7. Aanbiedingen (bewegende strook) ===== */
 .offers {
   overflow: hidden;
@@ -485,7 +511,7 @@ a {
     padding: 32px 0;
   }
 
-    .categories {
+  .categories {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
   }
