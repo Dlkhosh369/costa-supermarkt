@@ -315,7 +315,7 @@ a {
   letter-spacing: 0.08em;
   font-size: 13px;
 }
-/* ===== 6c. Pagina met producten van één groep ===== */
+
 /* ===== 6c. Pagina met producten van één groep ===== */
 .back-link {
   display: inline-block;
@@ -362,6 +362,7 @@ a {
   font-weight: bold;
   color: var(--red);
 }
+
 /* ===== 7. Aanbiedingen (bewegende strook) ===== */
 .offers {
   overflow: hidden;
@@ -390,12 +391,20 @@ a {
 }
 
 .offer {
+  display: block;
   width: 260px;
   flex-shrink: 0;
   background-color: var(--white);
   border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.offer:hover {
+  border-color: var(--red);
 }
 
 .offer-img {
@@ -569,5 +578,29 @@ a {
   .category-name {
     font-size: 16px;
     padding: 12px;
+  }
+
+  /* Compacter menu op telefoon */
+  .header-inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .menu {
+    gap: 0;
+  }
+
+  .menu a {
+    padding: 6px 10px;
+    font-size: 15px;
   }
 }
