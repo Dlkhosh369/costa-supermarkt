@@ -133,7 +133,13 @@
           <p><strong>Facebook:</strong> <a href="https://www.facebook.com/p/COSTA-Supermarket-100054594422867/" target="_blank" rel="noopener noreferrer">COSTA Supermarket | Amsterdam</a></p>
           <p><a href="https://share.google/RZNBIEMRVBd6GxDip" target="_blank" rel="noopener noreferrer" class="button button-red">Route plannen</a></p>
         </div>
-        <iframe class="map" title="Kaart: COSTA Supermarket, Meeuwenlaan 102" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.1538090593335!2d4.922149000000001!3d52.385762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609aac30f166b%3A0xebf649bab7775d86!2sCosta%20Supermarket%20Polski%20sklep!5e0!3m2!1snl!2snl!4v1793296317606!5m2!1snl!2snl" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        <!-- De kaart wordt pas geladen als de bezoeker op de knop klikt -->
+        <div id="kaart-vak" class="map-placeholder" data-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.1538090593335!2d4.922149000000001!3d52.385762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609aac30f166b%3A0xebf649bab7775d86!2sCosta%20Supermarket%20Polski%20sklep!5e0!3m2!1snl!2snl!4v1793296317606!5m2!1snl!2snl">
+          <p><strong>Kaart</strong></p>
+          <p class="small">Als je de kaart laadt, maakt je browser verbinding met Google. Google kan dan gegevens ontvangen, zoals je IP-adres. <a href="privacy.html">Lees meer</a></p>
+          <button id="kaart-knop" type="button" class="button button-red">Kaart laden</button>
+        </div>
       </div>
     </section>
 
@@ -167,10 +173,11 @@
   <footer class="footer">
     <div class="container footer-inner">
       <p>© 2026 COSTA Supermarket</p>
-      <p>Gemaakt door Dlkhosh Sharif</p>
+      <p><a href="privacy.html" style="color: inherit;">Privacy</a> · Gemaakt door Dlkhosh Sharif</p>
     </div>
   </footer>
 
   <script type="module" src="../js/aanbiedingen.js"></script>
+  <script type="module" src="../js/kaart.js"></script>
 </body>
 </html>

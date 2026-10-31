@@ -362,7 +362,39 @@ a {
   font-weight: bold;
   color: var(--red);
 }
+/* ===== 6d. Kaart pas laden na een klik, en tekstpagina's ===== */
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  min-height: 260px;
+  padding: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
 
+.map-placeholder p {
+  margin: 0;
+}
+
+button.button {
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.text-page {
+  max-width: 720px;
+}
+
+.text-page h2 {
+  margin-top: 28px;
+  font-size: 22px;
+}
 /* ===== 7. Aanbiedingen (bewegende strook) ===== */
 .offers {
   overflow: hidden;
