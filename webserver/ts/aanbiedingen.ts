@@ -24,10 +24,16 @@ class AanbiedingenStrook {
   private maakKaart(aanbieding: Aanbieding, kopie: boolean): HTMLElement {
     const { product, categorieTitel } = aanbieding;
 
-    const kaart = document.createElement("article");
+    // De hele kaart is een link naar de pagina van de groep
+    const kaart = document.createElement("a");
     kaart.className = "offer";
+    kaart.href = "categorie.html?groep=" + encodeURIComponent(product.groep);
+
+    // De kopie is alleen voor de animatie: verberg hem voor schermlezers
+    // en sla hem over als iemand met de Tab-toets door de pagina gaat.
     if (kopie) {
       kaart.setAttribute("aria-hidden", "true");
+      kaart.tabIndex = -1;
     }
 
     if (product.foto) {
