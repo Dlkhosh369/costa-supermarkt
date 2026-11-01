@@ -32,40 +32,24 @@
       <div class="container">
         <a href="homepage.html#producten" class="back-link">← Terug naar alle producten</a>
 
-        <!-- De titel wordt later door TypeScript ingevuld -->
+        <!-- De titel wordt door TypeScript ingevuld -->
         <h1 id="categorie-titel">Producten</h1>
         <p class="small">Prijzen onder voorbehoud</p>
 
-        <!-- De producten worden later door TypeScript hier neergezet -->
-        <div id="product-lijst" class="product-list">
-
-          <!-- TIJDELIJK: voorbeeldkaarten, om de opmaak te zien -->
-          <article class="product">
-            <h3>[PRODUCTNAAM]</h3>
-            <p class="product-price">€ [PRIJS]</p>
-          </article>
-          <article class="product">
-            <h3>[PRODUCTNAAM]</h3>
-            <p class="product-price">€ [PRIJS]</p>
-          </article>
-          <article class="product">
-            <h3>[PRODUCTNAAM]</h3>
-            <p class="product-price">€ [PRIJS]</p>
-          </article>
-
-        </div>
+        <!-- De producten worden door TypeScript hier neergezet (categorie.ts) -->
+        <div id="product-lijst" class="product-list"></div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- FOOTER: hetzelfde als op de homepage -->
   <footer class="footer">
     <div class="container footer-inner">
       <p>© 2026 COSTA Supermarket</p>
-      <p>Gemaakt door Dlkhosh Sharif</p>
+      <p><a href="privacy.html" style="color: inherit;">Privacy</a> · Gemaakt door Dlkhosh Sharif</p>
     </div>
   </footer>
+
   <script type="module" src="../js/categorie.js"></script>
-  <p><a href="privacy.html" style="color: inherit;">Privacy</a> · Gemaakt door Dlkhosh Sharif</p>
 </body>
 </html>
