@@ -1,6 +1,6 @@
 # Projectplan: COSTA Supermarket website met chatbot
 
-**Maker:** Dlkhosh Sharif · **Status:** concept, op basis van het onderzoek (`onderzoeksresultaten.md`)
+**Maker:** Dlkhosh Sharif · **Status:** concept, [op basis van het onderzoek ](OnderzoekResultaten.md)
 
 ## 1. Doel
 Een veilige, professionele website voor COSTA Supermarket (Meeuwenlaan 102, Amsterdam-Noord) waarop klanten openingstijden, producten, prijzen, aanbiedingen en het leverschema vinden. Een chatbot beantwoordt vragen in meerdere talen. De eigenaren beheren de gegevens zelf.

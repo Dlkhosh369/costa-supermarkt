@@ -7,7 +7,7 @@ Onderzoek voor een website met chatbot.
 
 | Bron | Strategie (ICT Research Methods) | Omvang |
 |---|---|---|
-| Google-reviews | Library (bestaande data) | 17 reviews gelezen (zie `reviews-analyse.md`) |
+| Google-reviews | Library (bestaande data) | [17 reviews gelezen](ReviewAnalys.md) |
 | Interview met de eigenaren | Field (mensen spreken) | 1 gesprek, antwoorden op papier genoteerd |
 | Korte vragen aan klanten | Field | 5 klanten, anoniem |
 
