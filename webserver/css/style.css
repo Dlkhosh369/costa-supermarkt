@@ -426,6 +426,41 @@ button.button {
 .delivery-note {
   margin-top: 20px;
 }
+/* =========================================
+   6f. PRODUCTGROEPEN: beweging bij hover
+   ========================================= */
+.category {
+  overflow: hidden; /* de foto mag niet buiten de tegel zoomen */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-img {
+  transition: transform 0.3s ease;
+}
+
+.category:hover,
+.category:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.category:hover .category-img {
+  transform: scale(1.05);
+}
+
+/* pijltje achter de naam */
+.category-name::after {
+  content: " →";
+  color: #c8102e;
+}
+
+/* sommige mensen willen geen bewegingen (instelling op hun apparaat) */
+@media (prefers-reduced-motion: reduce) {
+  .category,
+  .category-img {
+    transition: none;
+  }
+}
 /* ===== 7. Aanbiedingen (bewegende strook) ===== */
 .offers {
   overflow: hidden;
