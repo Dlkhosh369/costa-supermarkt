@@ -170,7 +170,7 @@ export function maakWinkel(): Winkel {
     "Kubuś sap",
     "Berkensap",
     "Energiedrank",
-  ]);
+  ], "dranken.png");
 
   const potten = maakGroep("potten", "Potten en conserven", [
     "Ogórki kiszone (zuurkool-augurken)",
@@ -179,7 +179,7 @@ export function maakWinkel(): Winkel {
     "Śledź w oleju (haring)",
     "Miód (honing)",
     "Powidła śliwkowe (pruimenjam)",
-  ]);
+  ],'poten.png');
 
   const pierogi = maakGroep("pierogi", "Pierogi en kant-en-klaar", [
     "Pierogi ruskie",
@@ -188,7 +188,7 @@ export function maakWinkel(): Winkel {
     "Pierogi z jagodami",
     "Gołąbki",
     "Placki ziemniaczane",
-  ]);
+  ],'periogie.png');
 
   // VOORBEELD-aanbiedingen om de strook te testen (nog niet echt!).
   // Alleen groepen met een foto, anders heeft de kaart geen plaatje.

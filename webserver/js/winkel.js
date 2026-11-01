@@ -135,7 +135,7 @@ export function maakWinkel() {
         "Kubuś sap",
         "Berkensap",
         "Energiedrank",
-    ]);
+    ], "dranken.png");
     const potten = maakGroep("potten", "Potten en conserven", [
         "Ogórki kiszone (zuurkool-augurken)",
         "Kapusta kiszona (zuurkool)",
@@ -143,7 +143,7 @@ export function maakWinkel() {
         "Śledź w oleju (haring)",
         "Miód (honing)",
         "Powidła śliwkowe (pruimenjam)",
-    ]);
+    ], 'poten.png');
     const pierogi = maakGroep("pierogi", "Pierogi en kant-en-klaar", [
         "Pierogi ruskie",
         "Pierogi z mięsem",
@@ -151,7 +151,7 @@ export function maakWinkel() {
         "Pierogi z jagodami",
         "Gołąbki",
         "Placki ziemniaczane",
-    ]);
+    ], 'periogie.png');
     // VOORBEELD-aanbiedingen om de strook te testen (nog niet echt!).
     // Alleen groepen met een foto, anders heeft de kaart geen plaatje.
     vlees.geefProducten()[0].inAanbieding = true;
