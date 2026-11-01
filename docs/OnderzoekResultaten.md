@@ -7,7 +7,7 @@ Onderzoek voor een website met chatbot.
 
 | Bron | Strategie (ICT Research Methods) | Omvang |
 |---|---|---|
-| Google-reviews | Library (bestaande data) | [17 reviews gelezen](ReviewAnalys.md) |
+| Google-reviews | Library (bestaande data) | 17 reviews gelezen (zie [reviews-analyse.md](ReviewAnalys.md)) |
 | Interview met de eigenaren | Field (mensen spreken) | 1 gesprek, antwoorden op papier genoteerd |
 | Korte vragen aan klanten | Field | 5 klanten, anoniem |
 
@@ -23,7 +23,7 @@ Onderzoek voor een website met chatbot.
 | Wat | Antwoord |
 |---|---|
 | Openingstijden | Elke dag **09:00 tot 21:00**. Zondag **10:00 tot 20:00** |
-| Feestdagen | **Nog niet ingevuld** |
+| Feestdagen | De winkel is **altijd open**, ook op feestdagen. Alleen op **1 januari** zijn de tijden korter. De uren verschillen **elk jaar** en worden later bepaald |
 | Naam, adres, telefoon, Facebook, kleuren | Het "Klopt?"-vakje is niet aangevinkt. **Nog bevestigen** |
 
 De openingstijden komen overeen met Google en met wat nu op de website staat. Het oudere bericht (Het Parool, 2018, tot 22:00) is dus verouderd.
@@ -107,6 +107,7 @@ Een chatbot **lost niet op**: onvriendelijk personeel, een oud gebouw, hoge prij
 | De banner zegt "elke vrijdag pierogi, kiełbasa en gebak", maar dat komt uit één review | De banner aanpassen aan wat de eigenaren **echt** zeggen (zie hieronder) |
 | Populair: pierogi, drank, twaróg, śmietana | De groepen uitbreiden: **Zuivel**, **Dranken** en **Diepvries/pierogi** (nu: brood, vlees, groente, snoep) |
 | Klanten spreken Pools, Oekraïens, Engels en Nederlands | Chatbot met **NL, EN, PL en UA** (RU: *niet onderzocht*). Teksten door de eigenaren laten controleren |
+| De openingstijden wijken soms af (1 januari, elk jaar anders) | In de administratie **bijzondere openingstijden per datum** kunnen invullen. De website en de chatbot gebruiken die tijden |
 | Prijzen kloppen niet altijd | Altijd **"Prijzen onder voorbehoud"**. De administratie moet prijzen **snel aanpasbaar** maken |
 | Producten zijn niet altijd er | Een eenvoudige markering per product: **"Deze week beschikbaar"**, door het personeel te zetten (*bespreken met de eigenaren*) |
 | Personeel en gebouw | Valt **buiten** de website. Wel aan de eigenaren teruggeven als advies |
@@ -143,9 +144,9 @@ Een chatbot **lost niet op**: onvriendelijk personeel, een oud gebouw, hoge prij
 - Maar **5 klanten** en **1 gesprek** met de eigenaren: de uitkomsten zijn patronen, geen bewijs.
 - De vragen 1, 2, 3, 4 en 6 van de klantvragen zijn **niet verwerkt**.
 - Vraag 7 aan de eigenaren (reactie op de klachten) is **niet beantwoord**.
-- De datum van het interview en de feestdagen ontbreken.
+- De datum van het interview ontbreekt.
 - De hypothese over vroege bezoeken op woensdag en donderdag is **niet getoetst**.
-- Het aanbod van concurrenten is maar beperkt bekeken (zie `onderzoek.md`).
+- Het aanbod van concurrenten is maar beperkt bekeken.
 
 ## 8. Conclusie
 > Pas de eerste zin aan zodat hij bij jouw hoofdvraag past.
@@ -165,7 +166,7 @@ Een website lost **niet** op: lege schappen, hoge prijzen, onvriendelijk persone
 Dit hoeft niet nu, maar moet vóór de lancering met de eigenaren geregeld zijn:
 - [ ] Leverschema (woensdag, donderdag, vrijdag) bevestigen
 - [ ] Wat "Roemeens(?) vlees" op woensdag is
-- [ ] Feestdagen en openingstijden rond kerst
+- [ ] De openingstijden van 1 januari (per jaar vaststellen)
 - [ ] Naam, adres, telefoon en Facebook bevestigen
 - [ ] Regels voor reclame voor alcohol
 - [ ] Officiële bedrijfsnaam, KvK-nummer en e-mailadres voor de privacyverklaring

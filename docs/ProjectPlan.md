@@ -1,6 +1,6 @@
 # Projectplan: COSTA Supermarket website met chatbot
 
-**Maker:** Dlkhosh Sharif · **Status:** concept, [op basis van het onderzoek ](OnderzoekResultaten.md)
+**Maker:** Dlkhosh Sharif · **Status:** concept, op basis van het onderzoek ([onderzoeksresultaten.md](OnderzoeksResultaten.md))
 
 ## 1. Doel
 Een veilige, professionele website voor COSTA Supermarket (Meeuwenlaan 102, Amsterdam-Noord) waarop klanten openingstijden, producten, prijzen, aanbiedingen en het leverschema vinden. Een chatbot beantwoordt vragen in meerdere talen. De eigenaren beheren de gegevens zelf.
@@ -27,6 +27,7 @@ Een veilige, professionele website voor COSTA Supermarket (Meeuwenlaan 102, Amst
 | **Must** | Privacyverklaring, kaart pas na toestemming | Wet en vertrouwen |
 | **Should** | Chatbot in NL, EN, PL en UA | Klanten spreken veel talen |
 | **Should** | Aanbiedingen van de week | Wisselen elke week |
+| **Should** | Bijzondere openingstijden per datum (bijvoorbeeld 1 januari) | De tijden verschillen elk jaar |
 | **Should** | Markering "deze week beschikbaar" | Producten zijn niet altijd er |
 | **Should** | Groepen Zuivel, Dranken, Diepvries/pierogi | Populairste producten |
 | **Could** | Zoeken op productnaam | Handig, geen noodzaak |
@@ -52,7 +53,7 @@ Een veilige, professionele website voor COSTA Supermarket (Meeuwenlaan 102, Amst
 **Planning:** het schoolproject Newcomer gaat altijd voor. Dit project doe ik in de uren daarnaast, met kleine stappen en regelmatige commits.
 
 ## 6. Technische keuzes (kort)
-Frontend in TypeScript, backend in Node met Express, PostgreSQL (lokaal in Docker), inloggen met sessies en gehashte wachtwoorden, AI-sleutel alleen op de server. Uitleg staat in `architectuur.md`.
+Frontend in TypeScript, backend in Node met Express, PostgreSQL (lokaal in Docker), inloggen met sessies en gehashte wachtwoorden, AI-sleutel alleen op de server. Uitleg staat in [architectuur.md](architectuur.md).
 
 ## 7. Risico's
 
